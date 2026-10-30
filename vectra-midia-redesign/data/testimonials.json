@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "yearsInMarket": "+5",
+    "yearsLabel": "Anos de mercado gerando resultados",
+    "clientsCount": "+120",
+    "clientsLabel": "Empresas e negócios locais impulsionados",
+    "statesCount": "+18",
+    "statesLabel": "Estados atendidos em todo o Brasil"
+  },
+  "videoTestimonials": [
+    {
+      "id": "video-1",
+      "featured": true,
+      "clientName": "Consórcio Canopus & Parceiros",
+      "company": "Setor Automotivo & Consórcios",
+      "segment": "Vendas Locais & Captação",
+      "duration": "Reels",
+      "quote": "A Vectra Mídia reestruturou toda a nossa abordagem de leads, desde o primeiro contato até o atendimento humanizado no WhatsApp.",
+      "thumbnail": "./assets/images/real-3-entrevista-carros.jpg",
+      "videoUrl": "https://www.instagram.com/reels/Db3m3c7Rxhn/",
+      "mp4Url": "https://assets.mixkit.co/videos/preview/mixkit-man-holding-a-phone-and-smiling-41558-large.mp4"
+    },
+    {
+      "id": "video-2",
+      "featured": false,
+      "clientName": "Produção Audiovisual no Cliente",
+      "company": "Gravação de Conteúdo & Anúncios",
+      "segment": "Vídeo Marketing",
+      "duration": "Reels",
+      "quote": "Gravação com iluminação profissional e roteiro validado direto na empresa do cliente.",
+      "thumbnail": "./assets/images/real-5-gravacao.png",
+      "videoUrl": "https://www.instagram.com/reel/DXPT6wMERR3/?stkn=bzE1bTFkMzQydjA5",
+      "mp4Url": "https://assets.mixkit.co/videos/preview/mixkit-vertical-shot-of-a-woman-filming-a-vlog-42898-large.mp4"
+    },
+    {
+      "id": "video-3",
+      "featured": false,
+      "clientName": "Alinhamento Estratégico Presencial",
+      "company": "Consultoria de Atendimento & Vendas",
+      "segment": "Gestão de Leads",
+      "duration": "Reels",
+      "quote": "Reuniões presenciais de alinhamento com a diretoria para otimização da taxa de conversão.",
+      "thumbnail": "./assets/images/real-4-reuniao.png",
+      "videoUrl": "https://www.instagram.com/reel/DYFdZgCR0QF/?stkn=MXhuM3gxY2dlY3U3eQ",
+      "mp4Url": "https://assets.mixkit.co/videos/preview/mixkit-vertical-shot-of-a-man-working-on-a-laptop-42901-large.mp4"
+    }
+  ],
+  "writtenTestimonials": [
+    {
+      "name": "Consórcio Canopus",
+      "company": "Setor Automotivo",
+      "segment": "Vendas Locais",
+      "rating": 5,
+      "avatar": "./assets/images/real-4-reuniao.png",
+      "text": "A Vectra alinhou o nosso atendimento e nos mostrou exatamente o valor do lead. As campanhas de tráfego pago trouxeram clientes reais prontos para fechar consórcio."
+    },
+    {
+      "name": "Cliente de Produção & Anúncios",
+      "company": "Serviços Médicos & Saúde",
+      "segment": "Captação Digital",
+      "rating": 5,
+      "avatar": "./assets/images/real-5-gravacao.png",
+      "text": "A equipe veio até a nossa clínica com equipamentos de iluminação e áudio. Os vídeos gravados tiveram um engajamento gigante no Instagram e geraram consultas na mesma semana."
+    },
+    {
+      "name": "Empresa Parceira Local",
+      "company": "Comércio & Serviços",
+      "segment": "Posicionamento Regional",
+      "rating": 5,
+      "avatar": "./assets/images/real-1-ponte.jpg",
+      "text": "Atendimento totalmente humanizado, rápido e direto ao ponto. Paramos de gastar dinheiro à toa e começamos a ver o WhatsApp bombando diariamente."
+    }
+  ]
+}
