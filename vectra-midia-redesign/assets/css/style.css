@@ -24,6 +24,11 @@
   --blue-strong: #3a6df0;
   --blue-soft: rgba(103, 152, 255, 0.14);
 
+  /* Verde do WhatsApp: SÓ no botão flutuante e no ícone/animação do botão de diagnóstico */
+  --wa-green: #25D366;
+  --wa-green-dark: #1DA851;
+  --wa-green-glow: rgba(37, 211, 102, 0.55);
+
   /* Painel claro */
   --paper: #f4f6fb;
   --ink: #0a0a0a;
@@ -302,7 +307,7 @@ strong { color: var(--white); font-weight: 600; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; flex: none; }
-.brand-mark { width: 34px; height: auto; }
+.brand-mark { height: 30px; width: auto; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-name { font-weight: 600; font-size: 15px; letter-spacing: 0.06em; }
 .brand-sub { font-family: var(--mono); font-size: 10.5px; color: var(--mist); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; }
@@ -427,7 +432,7 @@ strong { color: var(--white); font-weight: 600; }
 }
 .dash-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--raised); }
 .dash-title { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 500; }
-.dash-title img { width: 18px; height: auto; }
+.dash-title img { height: 18px; width: auto; }
 .dash-live { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11px; color: var(--blue); text-transform: uppercase; letter-spacing: .08em; }
 
 .dash-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
@@ -1164,13 +1169,13 @@ strong { color: var(--white); font-weight: 600; }
   width: 38px; height: 38px;
   display: inline-flex; align-items: center; justify-content: center;
   border-radius: 6px;
-  background: var(--blue-strong);
+  background: var(--wa-green);
   color: var(--white);
   transition: transform .4s cubic-bezier(.2,.7,.2,1), background-color .3s ease;
 }
 .btn-cta-ring {
   position: absolute; inset: -1px; z-index: -2; border-radius: inherit; pointer-events: none;
-  border: 1px solid var(--blue);
+  border: 2px solid var(--wa-green);
   animation: ring 2.4s ease-out infinite;
 }
 @keyframes ring { from { opacity: .9; transform: scale(1); } to { opacity: 0; transform: scale(1.18, 1.5); } }
@@ -1178,7 +1183,7 @@ strong { color: var(--white); font-weight: 600; }
   background: #eef3ff;
   box-shadow: 0 0 0 4px rgba(103,152,255,.35), 0 18px 60px -10px rgba(103,152,255,.95);
 }
-.btn-cta:hover .btn-cta-icon { transform: rotate(-12deg) scale(1.1); background: var(--blue); }
+.btn-cta:hover .btn-cta-icon { transform: rotate(-12deg) scale(1.1); background: var(--wa-green-dark); }
 .btn-cta:active { transform: scale(.97); }
 
 /* --------------------------------------------------------------------------
@@ -1271,23 +1276,23 @@ strong { color: var(--white); font-weight: 600; }
   width: 60px; height: 60px;
   display: flex; align-items: center; justify-content: center;
   border-radius: 50%;
-  background: var(--blue-strong);
+  background: var(--wa-green);
   color: var(--white);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.18) inset, 0 10px 40px -8px rgba(58,109,240,.9);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.18) inset, 0 10px 40px -8px var(--wa-green-glow);
   animation: breathe 2.4s ease-in-out infinite;
   transition: transform .25s ease, background-color .25s ease;
 }
 .floating-wa svg { position: relative; z-index: 1; }
-.floating-wa:hover { transform: scale(1.08); background: var(--blue); animation-play-state: paused; }
+.floating-wa:hover { transform: scale(1.08); background: var(--wa-green-dark); animation-play-state: paused; }
 .floating-wa-ring {
   position: absolute; inset: 0; border-radius: 50%;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--wa-green);
   animation: wave 2.4s ease-out infinite;
   pointer-events: none;
 }
 .floating-wa-ring--2 { animation-delay: 1.2s; }
 @keyframes wave { from { transform: scale(1); opacity: .9; } to { transform: scale(1.9); opacity: 0; } }
-@keyframes breathe { 50% { box-shadow: 0 0 0 1px rgba(255,255,255,.18) inset, 0 10px 60px 4px rgba(58,109,240,.95); } }
+@keyframes breathe { 50% { box-shadow: 0 0 0 1px rgba(255,255,255,.18) inset, 0 10px 60px 4px rgba(37,211,102,.75); } }
 
 /* --------------------------------------------------------------------------
    JANELAS (MODAIS)
